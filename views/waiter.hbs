@@ -1,0 +1,24 @@
+Welcome {{username}}
+
+<form action='/waiter/{{username}}', method='post'>
+    <input type="checkbox" name="availableDays" value="Monday" {{#if data.Monday}}checked{{/if}}>Monday
+    <input type="checkbox" name="availableDays"  value = "Tuesday"{{#if data.Tuesday}}checked{{/if}}>Tuesday
+    <input type="checkbox" name="availableDays"  value="Wednesday"{{#if data.Wednesday}}checked{{/if}}>Wednesday
+    <input type="checkbox" name="availableDays"  value = "Thursday"{{#if data.Thursday}}checked{{/if}}>Thursday
+    <input type="checkbox" name="availableDays"  value="Friday"{{#if data.Friday}}checked{{/if}}>Friday
+    <input type="checkbox" name="availableDays" value="Saturday"{{#if data.Saturday}}checked{{/if}}>Saturday
+    <input type="checkbox" name="availableDays" value="Sunday"{{#if data.Sunday}}checked{{/if}}>Sunday
+    <input type='submit'>
+</form>
+
+{{messages.msg}}
+<!-- <ul>
+  {{#each days}}
+    <li>{{this}}</li>
+  {{/each}}
+</ul> -->
+<ul>
+{{#each messages.days}}
+  <li>{{this}}</li>
+{{/each}}
+</ul>

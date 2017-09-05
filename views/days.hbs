@@ -1,0 +1,79 @@
+<table>
+  <thead>
+  <th>Sunday</th>
+  <th>Monday</th>
+  <th>Tuesday</th>
+  <th>Wednesday</th>
+  <th>Thursday</th>
+  <th>Friday</th>
+  <th>Saturday</th>
+</thead>
+
+<tbody>
+  <td>
+    <ul class="{{waitersPerDay.Sunday.displayStyle}}">
+      {{#each waitersPerDay.Sunday.waiters}}
+        <li >
+          {{this}}
+        </li>
+      {{/each}}
+    </ul>
+  </td>
+  <td>
+    <ul class="{{waitersPerDay.Monday.displayStyle}}">
+      {{#each waitersPerDay.Monday.waiters}}
+        <li>
+          {{this}}
+        </li>
+      {{/each}}
+    </ul>
+  </td>
+  <td>
+    <ul class="{{waitersPerDay.Tuesday.displayStyle}}">
+      {{#each waitersPerDay.Tuesday.waiters}}
+        <li>
+          {{this}}
+        </li>
+      {{/each}}
+    </ul>
+  </td>
+  <td>
+    <ul class="{{waitersPerDay.Wednesday.displayStyle}}">
+      {{#each waitersPerDay.Wednesday.waiters}}
+        <li>
+          {{this}}
+        </li>
+      {{/each}}
+    </ul>
+  </td>
+  <td>
+    <ul class="{{waitersPerDay.Thursday.displayStyle}}">
+      {{#each waitersPerDay.Thursday.waiters}}
+        <li>
+          {{this}}
+        </li>
+      {{/each}}
+    </ul>
+  </td>
+  <td>
+    <ul class="{{waitersPerDay.Friday.displayStyle}}">
+      {{#each waitersPerDay.Friday.waiters}}
+        <li>
+          {{this}}
+        </li>
+      {{/each}}
+    </ul>
+  </td>
+  <td>
+    <ul class="{{waitersPerDay.Saturday.displayStyle}}" >
+      {{#each waitersPerDay.Saturday.waiters}}
+        <li>
+          {{this}}
+        </li>
+      {{/each}}
+    </ul>
+  </td>
+
+</tbody>
+
+</table>
