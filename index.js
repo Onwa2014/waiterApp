@@ -8,7 +8,7 @@ var session = require('express-session');
 
 var WaiterRoute = require("./waiter");
 const mongoURL = process.env.MONGO_DB_URL || "mongodb://localhost/shifts";
-var port = 3002;
+const port = process.env.PORT || 3002;
 
 let waiterRoute = WaiterRoute();
 
