@@ -50,6 +50,9 @@ let addedDays = function(req,res){
           if(!data){
             //create a new user
             var shift = new WaiterShift({username:enteredUsername})
+            if (!Array.isArray(selectedDays)) {
+                       selectedDays = [selectedDays]
+               }
             selectedDays.forEach(function(day){
               shift[day] = true;
             });
